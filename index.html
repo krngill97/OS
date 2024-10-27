@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OS</title>
+    <link
+      rel="shortcut icon"
+      href="/IMAGES/fusionOS_logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <!-- Ensure this path is correct -->
+  </head>
+  <body>
+    <!-- Making taskbar -->
+    <div class="taskbar">
+      <div class="taskbar_icons" data-title="Start">
+        <img
+          id="start"
+          src="/IMAGES/start_png-removebg-preview.png"
+          alt="Start"
+        />
+      </div>
+      <div class="taskbar_icons" data-title="Storage">
+        <img src="/IMAGES/storage_png-removebg-preview.png" alt="Storage" />
+      </div>
+      <div class="taskbar_icons" data-title="Browser">
+        <img src="/IMAGES/browser_icon-removebg-preview.png" alt="Browser" />
+      </div>
+      <div class="taskbar_icons" data-title="Settings">
+        <img id="settings"
+          src="/IMAGES/setting_icon-removebg-preview (1).png"
+          alt="Settings"
+        />
+      </div>
+      <div class="taskbar_icons" data-title="Calculator">
+        <img
+          src="/IMAGES/calculator_icon-removebg-preview.png"
+          alt="Calculator"
+        />
+      </div>
+      <div class="taskbar_icons" data-title="Weather">
+        <img src="/IMAGES/weather_icon-removebg-preview.png" alt="Weather" />
+      </div>
+    </div>
+
+
+  <!-- avarage container  -->
+  
+    <div id="setting_window" class="windows" >
+      <div class="window_header">
+        <span class="name_of_folder">settings</span>
+        <div class="window_control">
+          <button class="window_control_button" id="minimize">-</button>
+          <button  class="window_control_button"  id="resize">&#9633;</button>
+          <button  class="window_control_button"  id="close">&times;</button>
+        </div>
+      </div>
+      <div class="window_body">
+        <h3>Change wallpaper</h3>
+        <input type="file" id="wallpaperInput" accept="image/*" />
+      </div>
+    </div>
+
+    <!-- mouse right click on body, you can create new folder, delete it, rename it, and store the data inside the folder and also refresh effect will be included, plus more option available soon -->
+    
+    <div class="mouse_right_click">
+      <h3 id="new_folder_will_be_created" class="mouse_right_click_h3_text"> New Folder</h3>
+      
+      <h3 class="mouse_right_click_h3_text">Refresh</h3>
+      <h3 class="mouse_right_click_h3_text">settings</h3>
+    </div>
+
+
+    <!-- new folder created  -->
+
+    <div id="new_folder">
+      <img id="new_folder_icon" src="/IMAGES/newfolder_design-removebg-preview.png" alt="">
+   </div>
+   
+
+   <div class="new_folder_container">
+    <div class="window_header">
+      <span class="name_of_folder">New folder</span>
+      <div class="window_control">
+        <button class="window_control_button" id="minimize">-</button>
+        <button  class="window_control_button"  id="resize">&#9633;</button>
+        <button  class="window_control_button"  id="close">&times;</button>
+      </div>
+    </div>
+   </div>
+
+    <script src="/JAVASCRIPT/script.js"></script>
+  </body>
+</html>
